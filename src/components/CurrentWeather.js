@@ -1,5 +1,6 @@
 import React from 'react-dom'
 import mostlycloudy from "../img/weather-icons/mostlycloudy.svg"
+import "./CurrentWeather.css"
 function CurrentWeather(){
     return(
         <section className="currentWeather">
