@@ -1,13 +1,15 @@
-import {useState}from "react";
 
+import { useState}from "react";
 // import clear from "../img/weather-icons/clear.svg";
 import "./Search.css";
 
-function Search(){
+
+
+
+function Search({setCity}){
+
+
 const [search,setSearch]=useState('');
-const fetchData=()=>{
-  
-}
     return (
       <header className="app__header">
       <nav>
@@ -15,8 +17,8 @@ const fetchData=()=>{
           <input value={search}
             className="citySearch"
             placeholder="Type in a city Name"
-            onChange={e => setSearch(e.target.value)} />
-          <input value="FIND WEATHER" type="button" className="buttonSearch"  onClick={fetchData} />
+            onChange={(e)=>setSearch(e.target.value)} />
+          <input value="FIND WEATHER" type="button" className="buttonSearch"  onClick={()=>setCity(search)} />
         </form>
       </nav>
     </header>
