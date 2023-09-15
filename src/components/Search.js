@@ -6,7 +6,7 @@ import "./Search.css";
 function Search(){
 const [search,setSearch]=useState('');
 const fetchData=()=>{
-  console.log("hello")
+  
 }
     return (
       <header className="app__header">

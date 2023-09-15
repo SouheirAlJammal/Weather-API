@@ -16,7 +16,7 @@
                 "temp_kf": 5.11
             },
             "weather": [
-                {
+                  {
                     "id": 800,
                     "main": "Clear",
                     "description": "clear sky",
